@@ -144,9 +144,8 @@ h2, h3{
 }
 
 .about-me .profile img{
-    border-radius: 50%;
-    width: 65px;
-    margin-right: 20px;
+    border-radius: 1%;
+    width: 200px;
     float: left;
 }
 
@@ -377,4 +376,6 @@ h2, h3{
     }
     
 }
+
+
 
