@@ -57,7 +57,6 @@
                             <li class="project-list">Tagging feature</li>
                             <li class="project-list">History command</li>
                             <li class="project-list">Sorting command</li>
-                            <li class="project-list">Clear command</li>
                             <li class="project-list">and Find command</li>
                         </ul>
                         <h3 class="overview_subtitle" id="Approach">Process</h3>
@@ -86,6 +85,69 @@
                     </div>
                 </div>
             </div>   
+            <div id="Process">
+                <h2 class="page-header"> </h2> 
+                <h3 class="project_subtitle" id="Introduction">Background</h3>
+                <div class="row">
+                    <img src="img/toluist-original.png" alt="toluist original" width="30%" height="30%" align="left" style="margin: 10px 10px">
+                    <p class="project-desc">
+                        Created for CS2103, our team started with an initial prototype of an address book application. Our job was to build up from it to create a todo list application. We were given the persona of a power user who uses Comand-Line Interface input as their preference. As such, we designed our application with that in mind, ensuring that the features enhance the todo list in the minds of this user.
+                    </p>
+                </div>
+                <h3 class="project_subtitle" id="Introduction">Displaying Information With Only Keyboard</h3>
+                <div class="row">
+                    <div class="row">
+                        <img src="img/toluist-find.png" alt="toluist find command" width="40%" height="40%" align="left" style="margin: 10px 10px">
+                        <p class="project-desc">
+                            As the user uses the application, there will be a lot of information which the application will carry. It is important that the user is able to access all this information and to navigate through different items easily. We have two main ways to filter data for the user.
+                        </p>
+                        <p class="project-desc">
+                            Firstly, we have a find command which allows users to search through the information. The user can type in a word and the application will show the user items with that keyword. We also implemented a tagging system, allowing users to tag items with specific keywords for easier categorization. This also allows users to refine their search, whether they are looking for items of a specific name or items of a specific tag.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <img src="img/toluist-sort.png" alt="toluist sort command" width="40%" height="40%" align="right" style="margin: 10px 10px">
+                        <p class="project-desc">
+                            Secondly, we have a sorting command and feature which automatically sorts the items into convenient lists for the user. We provide five ways of sorting the list, and they are all applied together. The user is able to change which sort parameter has higher priority, allowing them to decide which is more important to them individually. In addition to list sorting, we also split the items into multiple lists. We categorize the lists into four different categories, making it easy for the user to focus on different items as and when they need to. If they want to see all the items, they can choose to go to the 'all' list instead and forgo this feature.
+                    </p>
+                    </div>
+                </div>
+                <h3 class="project_subtitle" id="Introduction">Reducing Mental Load</h3>
+                <div class="row">
+                    <div class="row">
+                        <img src="img/toluist-help.png" alt="toluist help command" width="40%" height="40%" align="left" style="margin: 10px 10px">
+                        <p class="project-desc">
+                            Our application has many different commands for users to use. As such, it may be hard for users to remember what command performs what actions. As such, we have included an extensive help function for users to refer to. By typing 'help', users can see all the available commands which they can enter.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <img src="img/toluist-detailedhelp.png" alt="toluist detailed help" width="40%" height="40%" align="right" style="margin: 10px 10px">
+                        <p class="project-desc">
+                            Furthermore, by typing 'help [command]', they are able to see detailed information about the command they are looking for information on. This includes different ways of using the command, as well as examples which the user can follow so that they can see how to use the command.
+                        </p>
+                    </div>
+                    <p class="project-desc">
+                        Without using the help command, our application still provides guidance to users. When typing in the beginning of a command, the application will try to predict what the user wants to type, and show options which show some of the available actions the user can take. When a command is typed, the application will show other parameters which the user may want to use as well, asissting the user in completing the command.
+                    </p>
+                    <div class="row"><center>
+                        <img src="img/toluist-reactive2.png" alt="toluist reactive" width="15%" height="15%" style="margin: 10px 10px">
+                        <img src="img/toluist-reactive.png" alt="toluist reactive" width="42%" height="42%" style="margin: 10px 10px">
+                    </center></div>
+                </div>
+                <h3 class="project_subtitle" id="Introduction">Reducing Unnecessary Key Commands</h3>
+                <div class="row" style="overflow:auto">
+                    <p class="project-desc">
+                        As the user uses the application, they will end up inputting many commands. This can get tiresome for the user, especially when they know what they want to achieve but have to enter a long sequence to enact it. We have two main methods for dealing with this situation.
+                    </p>
+                    <p class="project-desc">
+                        Firstly, the prediction strategy explained in the previous section also acts as a quick-complete. When an option appears in the suggestions panel, the user can use 'tab' to automatically type in that phrase.
+                    </p>
+                    <center><img src="img/toluist-history.png" alt="toluist history" width="50%" height="50%" style="margin: 10px 10px"></center>
+                    <p class="project-desc">
+                        Secondly, we keep a 'history' of user inputs. The user can easily cycle through past messages using the 'up' and 'down' arrow keys, giving them quick "templates" which they have created before and can make adjustments to, to perform new actions. In addition to this, the prediction feature also includes the words used in the history, allowing the user   to quickly reuse key words over and over again.
+                    </p>
+                </div>
+            </div>
         </div>
         <a id ="scrollup"></a>
     </div>
