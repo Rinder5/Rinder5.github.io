@@ -48,7 +48,10 @@
                         <img width="560" height="615" src="img/katalyst2.png">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <iframe class="youtube" width="560" height="315" src="https://youtu.be/U3g0EbQKM-o" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/U3g0EbQKM-o" frameborder="0" allowfullscreen></iframe>
+                        <h1>
+                            <a href="https://www.youtube.com/watch?v=U3g0EbQKM-o" target="_blank">Link to trailer</a>
+                        </h1>
                     </div>
                 </div>
                 <div class="row">
@@ -94,36 +97,42 @@
             
             <div id="Process">
                 <h2 class="page-header"> </h2> 
-                <h3 class="project_subtitle" id="Introduction">Creating an Immersive World</h3>
+                <h3 class="project_subtitle" id="Introduction">ASCII Codes</h3>
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/Zbx0bexPAcw" frameborder="0" allowfullscreen></iframe>
                 <p class="project-desc">
-                    When creating this.place, our team wanted it to be a world which the players can get sucked into. Our team worked hard on the beautiful environments which players will encounter in our game. We wanted the players to feel as if they were a part of this world. We did this in two ways:
+                    In our first game, we introduce ASCII code to our players. ASCII code is a protocol that computers use to translate the electronic signals it receives into English for humans to read and utilize. We make the players do a simplified translation themselves, by putting them into an escape room where they need to decipher the ASCII codes around the room so that they can escape. By the end of the game, the players will have translated at least 3 different sets of codes, and will gain a bit of familiarity with ASCII. After each code, the players will need to interact with their environment in different ways, ultimately ending in a final passcode to win the game.
                 </p>
                 <p class="project-desc">
-                    Firstly, the menu is an overlay which appears on top of the game. Due to this, the player is always there in the environment. We did this to make the player feel like they were a part of the world, as they are physically always in the map. By doing this, we reduce times where the players feel disconnected from the in-game character.
+                    Since the game is made for beginners who are just starting out, we try to make it as simple as possible. We use a very small subset of characters, removing all uppercase letters and symbols from the codes. This includes spaces, which we choose to leave out by spacing our clues to make it as implicit as possible. We also have left out binary and hexadecimal, so the players only need to worry about translating decimal numbers.
                 </p>
-                <video src="vid/thisplace-pause.mp4" alt="this.place rotation" width="40%" height="40%" align="left" style="margin: 10px 10px float:left" autoplay loop muted></video>
+                <h3 class="project_subtitle" id="Introduction">Using Command-line Interfaces & Hashing Functions</h3>
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/Yz0jxJga7qo" frameborder="0" allowfullscreen></iframe>
                 <p class="project-desc">
-                    Secondly, we showcase the world by making the camera rotate slowly while the game is paused. Since there is no detached title or pause screen, the game world is always on-screen. This was also useful, as we demoed the game at STePs. As such, people could still see parts of the world when walking past, even if noone was playing. By making the camera rotate, we can show how expansive the world is, and give the players a chance to notice and appreciate small details which my team put into it. The small details showed that care and attention was paid when designing the levels, and gave players a reason to explore furthur through the stages of the game.
-                </p>
-                <h3 class="project_subtitle" id="Introduction">Guiding the Player</h3>
-                <img src="img/thisplace-stage.png" alt="this.place stage" width="50%" height="50%" align="left" style="margin: 10px 10px">
-                <p class="project-desc">
-                    With such a large world to explore, We needed to make sure that players could confidently know that they were making progress towards the goal. We put in collectibles to guide the players along the correct path. We used two types of collectibles: coins and gems.
+                    Our second game is a score-based game, where players try to feed as many creatures as possible. The players are not allowed to physically touch anything with their hands due to sanitary reasons, so the players need to make use of spells, which they cast using their wand (it is a magic school after all!). To cast spells, the player will need to create the proper commands to make cookies and serve them.
                 </p>
                 <p class="project-desc">
-                    Coins show the main path towards the goal. They are out in the open and are very noticable, due to their shininess and rotation. Newer players can safely follow these coins and make it through the level, without having to worry about other things happening in the environment.
+                    We implemented our essense of a command-line interface (CLI) with our spellcasting menu. Players have a choice of "spells" to cast, emulating a list of commands in a CLI. Each spell also has different options for the spell, which we use to emulate the arguments that commands in a CLI accepts. To make it easier for players to concentrate on the core concepts, we accept a wide range of control options for players to use so that they can use what is comfortable to them. We started with basic clicking, so that players need to click on the options one at a time. This works, but many of our testers used a laptop mousepad, which was inconvenient because they had to move the mouse a lot. We added in keyboard shortcuts to swap commands and arguments and cast spells, so that players who wanted to be quick and efficient could learn and get used to it. Finally, we also added a click-and-drag option, so that players using a mouse have another option for control, based on what they prefer.
                 </p>
                 <p class="project-desc">
-                    Gems are off the beaten path, and are usually hidden in hard-to-reach places. For more experienced players, these gems are a challenge for them to try and collect. They give an incentive for players to explore the environment and experience every part of the game.
+                    Our second teaching moment from this game is the concept of hashes. We are operating a cookie machine in the game to feed the creatures. The cookie machine accepts ingredients, and pops out a cookie based on what was put in. We used the idea of baking to convey hashing, since it shares the similarity of being irreversible and a one-way transaction. One aspect that was hard to convey was that the order of data matters in a hashing function. We try to emphasize that it matters by having the ingredients drop in one at a time, as well has having the first and second item being dropped in affecting different parts of the cookie.
+                </p>
+                <h3 class="project_subtitle" id="Introduction">Variables and If-Else Statements</h3>
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/DjSsyntjw0Q" frameborder="0" allowfullscreen></iframe>
+                <p class="project-desc">
+                    Our third game is a puzzle game, conveying the idea of variables. It uses the idea of a pipe puzzle game - where you start from one side and need to reach the other side by laying down pieces - and expands on it by adding an extra element. The extra element is that the line you draw from the start to the end needs to be a certain power level by the end. The player needs to manage this by choosing what is the starting power, as well as making the line go through pieces which alter the power level of the line.
                 </p>
                 <p class="project-desc">
-                    Both of these collectibles can be tracked by the user interface. This lets players know that they are making progress as they play the game. It also gives them something to aim for, as they try to make it to the end of the level.
+                    In later levels, we add on more complexity by adding branching paths. Newly introduced pieces will direct the line in a different direction based on the power level of the line. Players will need to care about the power level throughout the puzzle, instead of only at the end.
                 </p>
-                <h3 class="project_subtitle" id="Introduction">Keeping Track of Progress</h3>
-                <img src="img/thisplace-stageselect.png" alt="this.place stage select" width="50%" height="50%" align="right" style="margin: 10px 10px">
+                <h3 class="project_subtitle" id="Introduction">Loops</h3>
+                <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/uZkxrN3g7c8" frameborder="0" allowfullscreen></iframe>
                 <p class="project-desc">
-                    We have a stage select screen, to allow players to jump from stage to stage. This allows users to experience any stage, even if they had difficulty clearing a previous level. In addition, the coins and gems collected from previous stages are recorded and noted down here. Players can see the collectibles they had obtained and missed, and can enter the stage again to try and collect the ones they have missed. If they had already collected the coins or gems, they will appear slightly dimmed, so that they player knows which ones they had previously collected and can aim for other ones. Showing all of the coins and gems gives the player an overarching goal of collecting everything while playing the game, and tells the player that we care about their progress and achievements in the game.     
+                    Our last game introduces the idea of loops. Players will need to replicate a potion recipe by etching commands onto a robot automation card. The problem is that each command can only be used once on the card, but the recipe needs multiple iteration of steps. Due to this, players need to use loops to repeat commands so that they can imitate the recipe using the card.
                 </p>
+                <p class="project-desc">
+                    All of these games conveys concepts which are covered during the PicoCTF competition that CyLabs held in January 2021. CyLabs has great resources to teach people the concepts in more detail, so our job was to try to bring in newcomers in a friendly and inviting way. Along with these games, we also have sections to show how the game mechanics tranlate to concepts they can utilize for the competition, as well as links to the competition questions based on which games the players have experienced. Over the course of 14 weeks, our team made four polished games, one game wrapper, and integrated it into the PicoCTF system, which was a huge undertaking and a lot of work in a short amount of time.
+                </p>
+
 
             </div>
         </div>
